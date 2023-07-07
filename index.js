@@ -94,7 +94,10 @@ function createRes(callback) {
   res.getHeader = (x) => headers[x];
   // res.get=(x) => {
   // 	return headers[x]
-  // }
+    // }
+
+  res.removeHeader = () => {};
+    
   res.redirect = function(_code, url) {
     if (!_.isNumber(_code)) {
       code = 301;
